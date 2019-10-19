@@ -10,13 +10,35 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Astloch:700|Germania+One&display=swap" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div id="container">
+            <h1>Crystals Collector Game!</h1>
+            <div id="instructions">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to the random number, you lose the game if your score goes over the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts the values of the crystal are reset to new numbers.</p>
+            </div>
+            <h3>Number to match</h3>
+            <div id="number-to-match"></div>
+            <div id="crystal-container">
+                <img src="assets/img/crystal1.png" class="crystal" alt="">
+                <img src="assets/img/crystal2.png" class="crystal" alt="">
+                <img src="assets/img/crystal3.png" class="crystal" alt="">
+                <img src="assets/img/crystal4.png" class="crystal" alt="">
+            </div>
+            <h3 id="total-number">Your total total number is</h3>
+            <div id="user-number"></div>
+        </div>
 
-        
+
         
         <script src="" async defer></script>
     </body>
