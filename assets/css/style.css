@@ -96,3 +96,73 @@ h3 {
 #lose {
     padding-right: .1em;
 }
+
+@media screen and (max-width: 1900px) {
+
+    #container {
+        margin: 3em;
+        padding: 1em;
+    }
+
+    h1, h2, h3, h4 {
+      
+        padding: .5em;
+        
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    #total-number {
+        margin-top: 1em;
+    }
+
+    #instructions {
+       
+        font-size: 14px;
+      
+    }
+
+    #number-to-match, #user-number {
+        
+        font-size: 50px;
+        
+    }
+
+    .crystal {
+        width: 5em;
+        height: 5em;
+        margin: .5em;
+    }
+
+    #win-and-loss-div {
+    
+        font-size: 30px;
+        margin-top: .2em;
+      
+    }
+
+  } 
+
+  @media screen and (max-width: 600px) {
+    
+    #crystal-container {
+        justify-self: center;
+        display: grid;
+        grid-template-rows: 50% 50%;
+    }
+
+   #crystal1, #crystal2 {
+       grid-row: 1;
+       margin-bottom: .4em;
+   }
+
+    
+
+  }
+ 

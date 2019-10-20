@@ -1,11 +1,9 @@
-$(document).ready(function() {
-
-
  let computerNumber = (Math.floor(Math.random() * (120 - 19 + 1) + 19));
  let crystal1_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
  let crystal2_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
  let crystal3_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
  let crystal4_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
+
  
  computerNumberDiv = document.getElementById("number-to-match");
  computerNumberDiv.textContent = computerNumber;
@@ -33,7 +31,6 @@ $(document).ready(function() {
          crystal3_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
          crystal4_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
          matchingNumber = 0;
-         userNumberDiv.textContent = matchingNumber;
      }
    
      if (matchingNumber > computerNumber) {
@@ -46,7 +43,6 @@ $(document).ready(function() {
        crystal3_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
        crystal4_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
        matchingNumber = 0;
-       userNumberDiv.textContent = matchingNumber;
    }
     userNumberDiv.textContent = matchingNumber;
   })
@@ -62,7 +58,6 @@ $(document).ready(function() {
          crystal3_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
          crystal4_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
          matchingNumber = 0;
-         userNumberDiv.textContent = matchingNumber;
      }
    
      if (matchingNumber > computerNumber) {
@@ -75,7 +70,6 @@ $(document).ready(function() {
        crystal3_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
        crystal4_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
        matchingNumber = 0;
-       userNumberDiv.textContent = matchingNumber;
    }
     userNumberDiv.textContent = matchingNumber;
   })
@@ -91,7 +85,6 @@ $(document).ready(function() {
          crystal3_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
          crystal4_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
          matchingNumber = 0;
-         userNumberDiv.textContent = matchingNumber;
      }
    
      if (matchingNumber > computerNumber) {
@@ -104,7 +97,6 @@ $(document).ready(function() {
        crystal3_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
        crystal4_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
        matchingNumber = 0;
-       userNumberDiv.textContent = matchingNumber;
    }
     userNumberDiv.textContent = matchingNumber;
   })
@@ -120,7 +112,6 @@ $(document).ready(function() {
          crystal3_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
          crystal4_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
          matchingNumber = 0;
-         userNumberDiv.textContent = matchingNumber;
      }
    
      if (matchingNumber > computerNumber) {
@@ -133,11 +124,9 @@ $(document).ready(function() {
        crystal3_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
        crystal4_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
        matchingNumber = 0;
-       userNumberDiv.textContent = matchingNumber;
    }
     userNumberDiv.textContent = matchingNumber;
   })
 
 
 
-});
