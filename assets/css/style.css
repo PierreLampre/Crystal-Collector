@@ -73,3 +73,26 @@ h3 {
     border-radius: 24px;
     border: 1px solid white;
 }
+
+#win-and-loss-div {
+    background-color: rgb(75, 15, 170);
+    justify-self: center;
+    text-align: center;
+    border-radius: 24px;
+    border: 1px solid white;
+    font-family: 'Germania One', cursive;
+    font-size: 40px;
+    margin: .5em 1em .5em 1em;
+    padding: .5em;
+    letter-spacing: 2px;
+}
+
+#win, #lose {
+    padding-right: 1em;
+    padding-left: .4em;
+    letter-spacing: 2px;
+}
+
+#lose {
+    padding-right: .1em;
+}
