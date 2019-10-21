@@ -59,7 +59,7 @@
    
      if (matchingNumber > computerNumber) {
        loseCount++;
-       $("lose").text(loseCount);
+       $("#lose").text(loseCount);
        computerNumber = (Math.floor(Math.random() * (120 - 19 + 1) + 19));
        $("#number-to-match").text(computerNumber);
        crystal1_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
