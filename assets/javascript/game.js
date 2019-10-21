@@ -18,6 +18,7 @@
 
  $("#crystal1").on("click", function(){
     matchingNumber = crystal1_Number + matchingNumber;
+    
     if (matchingNumber === computerNumber) {
         winCount++;
         $("#win").text(winCount);
@@ -124,6 +125,39 @@
    }
     $("#user-number").text(matchingNumber);
   })
+
+  $( "#crystal1" ).mousedown(function() {
+    document.getElementById("crystal1").style = "border: 1.5px solid rgb(126, 51, 248); box-shadow: 0 0 10px rgb(75, 15, 170);"
+  });
+
+  $( "#crystal1" ).mouseup(function() {
+    document.getElementById("crystal1").style = " border: 1px solid white;"
+  });
+
+  $( "#crystal2" ).mousedown(function() {
+    document.getElementById("crystal2").style = "border: 1.5px solid rgb(126, 51, 248); box-shadow: 0 0 10px rgb(75, 15, 170);"
+  });
+
+  $( "#crystal2" ).mouseup(function() {
+    document.getElementById("crystal2").style = " border: 1px solid white;"
+  });
+
+  $( "#crystal3" ).mousedown(function() {
+    document.getElementById("crystal3").style = "border: 1.5px solid rgb(126, 51, 248); box-shadow: 0 0 10px rgb(75, 15, 170);"
+  });
+
+  $( "#crystal3" ).mouseup(function() {
+    document.getElementById("crystal3").style = " border: 1px solid white;"
+  });
+
+  $( "#crystal4" ).mousedown(function() {
+    document.getElementById("crystal4").style = "border: 1.5px solid rgb(126, 51, 248); box-shadow: 0 0 10px rgb(75, 15, 170);"
+  });
+
+  $( "#crystal4" ).mouseup(function() {
+    document.getElementById("crystal4").style = " border: 1px solid white;"
+  });
+  
 
 
 
