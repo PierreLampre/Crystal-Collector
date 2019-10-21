@@ -26,6 +26,9 @@ $(".crystal").mouseup(function(){
      crystal4_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
      matchingNumber = 0;
      $("#user-number").text(matchingNumber);
+     $(".colorswell,#user-number,#number-to-match").animate({backgroundColor: "#3e8744"}, 400);
+     $(".colorswell,#user-number,#number-to-match").animate({backgroundColor: "rgb(75, 15, 170)"}, 400);
+     
  }
 
  if (matchingNumber > computerNumber) {
@@ -39,6 +42,10 @@ $(".crystal").mouseup(function(){
    crystal4_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
    matchingNumber = 0;
    $("#user-number").text(matchingNumber);
+   $(".colorswell").animate({backgroundColor: "#850b0b"}, 400);
+   $(".shake").effect("shake", 400);
+   $(".shake").effect("shake", {direction: "up", times: 4, distance: 10}, 400);
+   $(".colorswell").animate({backgroundColor: "rgb(75, 15, 170)"}, 400);
 }
 });
 
@@ -60,12 +67,12 @@ $(".crystal").mouseup(function(){
   })
 
   $( "#crystal1,#crystal2,#crystal3,#crystal4" ).mousedown(function() {
-    $(this).css("border", "1.5px solid rgb(126, 51, 248)"); 
+    $(this).css("border", "4px solid rgb(126, 51, 248)"); 
     $(this).css("box-shadow: 0 0 10px", "rgb(75, 15, 170)");
   });
 
   $( "#crystal1,#crystal2,#crystal3,#crystal4" ).mouseup(function() {
-    $(this).css("border", "1px solid white");
+    $(this).css("border", "4px solid white");
   });
 
  
