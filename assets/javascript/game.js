@@ -22,7 +22,25 @@ $("#first").mousedown(function(){
   $(this).css("display", "none"); 
   $("#second").css("display", "grid");
   $("#container").css("margin", ".5em");
+  $("#instructionsToggle").css("display", "grid");
 })
+
+$("#instructionsToggle").mousedown(function(){
+  $(this).css("display", "none");
+  $("#first").css("display", "grid");
+  $("#second").css("display", "none"); 
+  $("#click-to-start").text("Click screen to go back to game");
+})
+
+$("#go-back").hover(function(){
+  $(this).css("border", "1px solid rgb(126, 51, 248)");
+  $(this).css("box-shadow: 0 0 10px", "rgb(75, 15, 170)");
+})
+
+$("#go-back").mouseleave(function(){
+  $(this).css("border", "1px solid white");
+})
+
 
 
 

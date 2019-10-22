@@ -11,7 +11,7 @@ body {
     display: grid;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     justify-self: center;
     text-align: center;
     font-family: 'Astloch', cursive;
@@ -27,6 +27,11 @@ h1 {
 
 h3 {
     font-size: 40px;
+    background-color: rgb(75, 15, 170);
+}
+
+h4 {
+    font-size: 30px;
     background-color: rgb(75, 15, 170);
 }
 
@@ -84,6 +89,10 @@ h3 {
     border: 4px solid white;
 }
 
+#total-number {
+    margin-top: 1em;
+}
+
 #win-and-loss-div {
     background-color: rgb(75, 15, 170);
     justify-self: center;
@@ -105,6 +114,11 @@ h3 {
 
 #lose {
     padding-right: .1em;
+}
+
+#instructionsToggle {
+    display: none;
+    margin-top: .2em;
 }
 
 @media screen and (max-width: 1900px) {
