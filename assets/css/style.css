@@ -30,9 +30,15 @@ h3 {
     background-color: rgb(75, 15, 170);
 }
 
-#total-number {
-    margin-top: 1em;
+#first {
+    display: grid;
 }
+
+#second {
+    display: none;
+    margin: 0;
+}
+
 
 #instructions {
     justify-self: center;
@@ -60,6 +66,10 @@ h3 {
     width: 2em;
     height: 1em;
     margin: .5em 1em .5em 1em;
+}
+
+#user-number {
+    margin: .3em 1em .2em 1em;
 }
 
 #crystal-container {

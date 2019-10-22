@@ -16,6 +16,16 @@
  $("#win").text(winCount);
  $("#lose").text(loseCount);
 
+// Screen display toggle
+
+$("#first").mousedown(function(){
+  $(this).css("display", "none"); 
+  $("#second").css("display", "grid");
+  $("#container").css("margin", ".5em");
+})
+
+
+
 // If logic for wins and losses, respective animations
 
 $(".crystal").mouseup(function(){
@@ -73,14 +83,15 @@ $(".crystal").mouseup(function(){
   
   // Border glow and reset for individual crystals
 
-  $( "#crystal1,#crystal2,#crystal3,#crystal4" ).mousedown(function() {
+  $("#crystal1,#crystal2,#crystal3,#crystal4").mousedown(function() {
     $(this).css("border", "4px solid rgb(126, 51, 248)"); 
     $(this).css("box-shadow: 0 0 10px", "rgb(75, 15, 170)");
   });
 
-  $( "#crystal1,#crystal2,#crystal3,#crystal4" ).mouseup(function() {
+  $("#crystal1,#crystal2,#crystal3,#crystal4").mouseup(function() {
     $(this).css("border", "4px solid white");
   });
+
 
  
 
