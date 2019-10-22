@@ -1,3 +1,5 @@
+ // Global variables and starting assignments
+
  let computerNumber = (Math.floor(Math.random() * (120 - 19 + 1) + 19));
  let crystal1_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
  let crystal2_Number = (Math.floor(Math.random() * (12 - 1 + 1) + 1));
@@ -14,6 +16,8 @@
  $("#win").text(winCount);
  $("#lose").text(loseCount);
 
+// If logic for wins and losses, respective animations
+
 $(".crystal").mouseup(function(){
   if (matchingNumber === computerNumber) {
     winCount++;
@@ -28,7 +32,6 @@ $(".crystal").mouseup(function(){
      $("#user-number").text(matchingNumber);
      $(".colorswell,#user-number,#number-to-match").animate({backgroundColor: "#3e8744"}, 400);
      $(".colorswell,#user-number,#number-to-match").animate({backgroundColor: "rgb(75, 15, 170)"}, 400);
-     
  }
 
  if (matchingNumber > computerNumber) {
@@ -49,6 +52,8 @@ $(".crystal").mouseup(function(){
 }
 });
 
+  // Crystal math on click
+
  $("#crystal1").mousedown("click", function(){
     matchingNumber = crystal1_Number + matchingNumber;
     $("#user-number").text(matchingNumber);
@@ -65,6 +70,8 @@ $(".crystal").mouseup(function(){
     matchingNumber = crystal4_Number + matchingNumber;
     $("#user-number").text(matchingNumber);
   })
+  
+  // Border glow and reset for individual crystals
 
   $( "#crystal1,#crystal2,#crystal3,#crystal4" ).mousedown(function() {
     $(this).css("border", "4px solid rgb(126, 51, 248)"); 
