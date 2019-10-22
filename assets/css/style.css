@@ -194,23 +194,5 @@ h4 {
 
   }
  
-
-  @media screen and (max-width: 470px) {
-    
-    
-
-   #container {
-       grid-template-columns: 100%;
-   }
-
-   #instructions {
-       padding: .4em;
-       letter-spacing: 0px;
-       margin: 0;
-   }
-    
-
-  }
-
  
  
